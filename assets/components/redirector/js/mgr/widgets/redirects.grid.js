@@ -36,7 +36,7 @@ Redi.grid.Redirects = function(config) {
     Ext.applyIf(config,{
         id: 'redirector-grid-redirects'
         ,url: Redi.config.connector_url
-        ,baseParams: { action: 'mgr/redirect/getList' }
+        ,baseParams: { action: 'mgr/redirect/getlist' }
         ,fields: ['id','pattern','target','context_key','triggered','triggered_first','triggered_last','valid','failure_msg','active']
         ,save_action: 'mgr/redirect/updateFromGrid'
         ,save_callback: function(r) {
